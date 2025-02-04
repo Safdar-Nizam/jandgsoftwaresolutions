@@ -26,6 +26,11 @@
       font-size: 3rem;
       color: #0066cc;
     }
+    /* Ensure the map fills its container */
+    #mapid {
+      height: 400px;
+      width: 100%;
+    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -192,7 +197,7 @@
 
       <!-- Map Section -->
       <div class="mt-8">
-        <div id="mapid" style="height: 400px;"></div>
+        <div id="mapid"></div>
       </div>
 
       <!-- Contact Form -->
@@ -241,18 +246,10 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Define a custom blue icon using your provided image
-    var customIcon = L.icon({
-      iconUrl: 'https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/vendor/leaflet/images/blue_iFix@2x.png',
-      iconSize: [24, 35],
-      iconAnchor: [12, 35],
-      popupAnchor: [0, -35]
+    // Invalidate map size after window loads to fix any rendering issues
+    window.addEventListener('load', function() {
+      map.invalidateSize();
     });
-
-    // Add a marker at the Palm Beach Outlets location
-    L.marker([26.725945, -80.087815], { icon: customIcon }).addTo(map)
-      .bindPopup("<strong>Palm Beach Outlets</strong><br>1721 Palm Beach Lakes Blvd<br>West Palm Beach, FL 33401")
-      .openPopup();
   </script>
 </body>
 </html>

@@ -10,13 +10,20 @@
       font-family: 'Arial', sans-serif;
     }
     .hero-gradient {
-      background: linear-gradient(135deg, #0066cc, #00b0ff);
+      position: relative;
+      overflow: hidden;
+      /* Layer a semi-transparent gradient over the background image */
+      background: 
+        linear-gradient(135deg, rgba(0,102,204,0.7), rgba(0,176,255,0.7)),
+        url('https://plus.unsplash.com/premium_photo-1682141013747-5aed8665c154?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D') no-repeat center center;
+      background-size: cover;
+      background-blend-mode: overlay;
+      color: white;
     }
     .feature-icon {
       font-size: 3rem;
       color: #0066cc;
     }
-
     
   </style>
 </head>

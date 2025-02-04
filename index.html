@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>J&G Software Solutions - Comprehensive Tech Services</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -32,7 +34,7 @@
       <!-- Company Logo -->
       <img src="https://img.freepik.com/premium-vector/creative-initial-letter-jg-logo-icon-design-template-elements_555601-343.jpg" 
            alt="J&G Software Solutions Logo" 
-           class="mx-auto mb-4 w-32">
+           class="mx-auto mb-4 w-32" />
       <h1 class="text-5xl font-bold mb-4">J&G Software Solutions</h1>
       <p class="text-xl max-w-2xl mx-auto">
         Empowering Businesses and Individuals with Cutting-Edge Technology Solutions
@@ -136,7 +138,7 @@
           <h3 class="text-2xl font-bold mb-2">Jay Hun</h3>
           <p class="text-gray-600 mb-2">Manager</p>
           <p class="text-gray-600">
-           With over a decade of experience in the IT industry, Jay is a seasoned professional in software development, IT management, and project leadership. His expertise in cutting-edge technology solutions has been instrumental in driving innovation, optimizing processes, and propelling the company's success
+           With over a decade of experience in the IT industry, Jay is a seasoned professional in software development, IT management, and project leadership. His expertise in cutting-edge technology solutions has been instrumental in driving innovation, optimizing processes, and propelling the company's success.
           </p>
         </div>
         <!-- Manager 2: Luis -->
@@ -180,6 +182,58 @@
           </p>
         </div>
       </div>
+
+      <!-- Map Section -->
+      <div class="mt-8">
+        <!-- Leaflet Map Snippet -->
+        <div class="col-lg-6 col-md-12 md-mb-5 order-lg-12 text-center" id="landing-main-section" data-meta="{&quot;country&quot;:&quot;United States&quot;,&quot;zip&quot;:&quot;33401&quot;,&quot;lat&quot;:&quot;26.725945&quot;,&quot;lng&quot;:&quot;-80.087815&quot;,&quot;address&quot;:&quot;1721 Palm Beach Lakes Blvd. Suite E410&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;West Palm Beach&quot;,&quot;phone&quot;:&quot;(561) 316-3250&quot;,&quot;state&quot;:&quot;FL&quot;,&quot;hours&quot;:{&quot;monday&quot;:[&quot;10:00 AM,9:00 PM&quot;],&quot;tuesday&quot;:[&quot;10:00 AM,9:00 PM&quot;],&quot;wednesday&quot;:[&quot;10:00 AM,9:00 PM&quot;],&quot;thursday&quot;:[&quot;10:00 AM,9:00 PM&quot;],&quot;friday&quot;:[&quot;10:00 AM,9:00 PM&quot;],&quot;saturday&quot;:[&quot;10:00 AM,9:00 PM&quot;],&quot;sunday&quot;:[&quot;10:00 AM,7:00 PM&quot;]},&quot;day&quot;:&quot;tuesday&quot;,&quot;slug&quot;:&quot;palm-beach-outlets&quot;,&quot;category&quot;:&quot;corporate&quot;}">
+          <div class="leafmap rounded leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="mapid_1396" data-lat="26.725945" data-lng="-80.087815" style="height: 400px; position: relative; outline: none;" tabindex="0">
+            <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(119px, 0px, 0px);">
+              <div class="leaflet-pane leaflet-tile-pane">
+                <div class="leaflet-layer" style="z-index: 1; opacity: 1;">
+                  <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(145px, 68px, 0px) scale(1);">
+                    <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/15/9093/13857.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-132px, -125px, 0px); opacity: 1;">
+                    <img alt="" role="presentation" src="https://b.tile.openstreetmap.org/15/9094/13857.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(124px, -125px, 0px); opacity: 1;">
+                    <img alt="" role="presentation" src="https://b.tile.openstreetmap.org/15/9093/13858.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-132px, 131px, 0px); opacity: 1;">
+                    <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/15/9094/13858.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(124px, 131px, 0px); opacity: 1;">
+                    <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/15/9092/13857.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-388px, -125px, 0px); opacity: 1;">
+                    <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/15/9095/13857.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(380px, -125px, 0px); opacity: 1;">
+                    <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/15/9092/13858.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-388px, 131px, 0px); opacity: 1;">
+                    <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/15/9095/13858.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(380px, 131px, 0px); opacity: 1;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="leaflet-pane leaflet-shadow-pane">
+              <img src="https://unpkg.com/leaflet@1.3.4/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -9px; margin-top: -42px; transform: translate3d(328px, 200px, 0px);">
+            </div>
+            <div class="leaflet-pane leaflet-overlay-pane"></div>
+            <div class="leaflet-pane leaflet-marker-pane">
+              <img src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/vendor/leaflet/images/blue_iFix@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -11px; margin-top: -37px; width: 24px; height: 35px; transform: translate3d(328px, 200px, 0px); z-index: 200;">
+            </div>
+            <div class="leaflet-pane leaflet-tooltip-pane"></div>
+            <div class="leaflet-pane leaflet-popup-pane"></div>
+            <div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(2.32812e+06px, 3.54765e+06px, 0px) scale(16384);"></div>
+          </div>
+          <div class="leaflet-control-container">
+            <div class="leaflet-top leaflet-left">
+              <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+                <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+                <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
+              </div>
+            </div>
+            <div class="leaflet-top leaflet-right"></div>
+            <div class="leaflet-bottom leaflet-left"></div>
+            <div class="leaflet-bottom leaflet-right">
+              <div class="leaflet-control-attribution leaflet-control">
+                <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
       <div class="mt-12">
         <h3 class="text-3xl font-bold text-center mb-8">Send Us a Message</h3>
         <form class="max-w-lg mx-auto">
@@ -211,5 +265,8 @@
       <p>&copy; 2025 J&G Accessories. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>

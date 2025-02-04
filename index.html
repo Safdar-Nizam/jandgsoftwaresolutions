@@ -12,7 +12,7 @@
     .hero-gradient {
       position: relative;
       overflow: hidden;
-      /* Increase the overlay opacity to 0.8 for a stronger effect */
+      /* Overlay with a semi-transparent blue gradient over the background image */
       background: 
         linear-gradient(135deg, rgba(0,102,204,0.6), rgba(0,176,255,0.6)),
         url('https://media.istockphoto.com/id/1830163120/photo/group-of-computer-programmers-talking-while-working-at-it-office.jpg?s=612x612&w=0&k=20&c=nnhMhZcifOMTSPiZJ72QUDVWxcSgCyth-2GQaDTgzx0=') no-repeat center center;
@@ -40,8 +40,6 @@
     </div>
   </header>
 
-
-
   <nav class="bg-white shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-center space-x-8">
       <a href="#services" class="text-blue-600 hover:text-blue-800">Services</a>
@@ -52,6 +50,7 @@
   </nav>
 
   <main class="container mx-auto px-4 py-12">
+    <!-- Services Section -->
     <section id="services" class="mb-16">
       <h2 class="text-4xl font-semibold text-center mb-12">Our Comprehensive Services</h2>
       <div class="grid md:grid-cols-3 gap-8">
@@ -91,35 +90,7 @@
       </div>
     </section>
 
-    <section id="expertise" class="bg-blue-50 rounded-lg p-12 mb-16">
-      <h2 class="text-4xl font-semibold text-center mb-12">Our Technology Expertise</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="text-2xl font-bold mb-6">Hardware Repair Capabilities</h3>
-          <ul class="list-disc list-inside space-y-3">
-            <li>Laptop Screen Replacements</li>
-            <li>Motherboard Diagnostics and Repair</li>
-            <li>Data Recovery Services</li>
-            <li>Battery and Component Replacements</li>
-            <li>Smartphone and Tablet Repairs</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-2xl font-bold mb-6">Technology Stack</h3>
-          <div class="flex flex-wrap gap-3">
-            <span class="bg-blue-200 px-3 py-1 rounded-full">Python</span>
-            <span class="bg-blue-200 px-3 py-1 rounded-full">JavaScript</span>
-            <span class="bg-blue-200 px-3 py-1 rounded-full">React</span>
-            <span class="bg-blue-200 px-3 py-1 rounded-full">Node.js</span>
-            <span class="bg-blue-200 px-3 py-1 rounded-full">AWS</span>
-            <span class="bg-blue-200 px-3 py-1 rounded-full">Azure</span>
-            <span class="bg-blue-200 px-3 py-1 rounded-full">SQL</span>
-            <span class="bg-blue-200 px-3 py-1 rounded-full">MongoDB</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Tech Accessories Store Section -->
     <section id="accessories" class="mb-16">
       <h2 class="text-4xl font-semibold text-center mb-12">Tech Accessories Store</h2>
       <div class="grid md:grid-cols-3 gap-8">
@@ -150,6 +121,28 @@
       </div>
     </section>
 
+    <!-- Our Managers Section -->
+    <section id="managers" class="mb-16">
+      <h2 class="text-4xl font-semibold text-center mb-12">Our Managers</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Manager 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <!-- Placeholder image; replace with an actual photo if available -->
+          <img src="https://via.placeholder.com/150" alt="Manager Jay Hun" class="mx-auto mb-4 rounded-full w-32 h-32">
+          <h3 class="text-2xl font-bold mb-2">Jay Hun</h3>
+          <p class="text-gray-600">Manager</p>
+        </div>
+        <!-- Manager 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <!-- Placeholder image; replace with an actual photo if available -->
+          <img src="https://via.placeholder.com/150" alt="Manager Luis" class="mx-auto mb-4 rounded-full w-32 h-32">
+          <h3 class="text-2xl font-bold mb-2">Luis</h3>
+          <p class="text-gray-600">Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="bg-white rounded-lg shadow-md p-12">
       <h2 class="text-4xl font-semibold text-center mb-12">Contact Us</h2>
       <div class="grid md:grid-cols-2 gap-8">
@@ -173,7 +166,6 @@
           </p>
         </div>
       </div>
-
       <div class="mt-12">
         <h3 class="text-3xl font-bold text-center mb-8">Send Us a Message</h3>
         <form class="max-w-lg mx-auto">
@@ -190,7 +182,9 @@
             <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border rounded-lg" required></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+              Send Message
+            </button>
           </div>
         </form>
       </div>

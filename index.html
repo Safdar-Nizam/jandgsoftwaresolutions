@@ -9,15 +9,30 @@
     body {
       font-family: 'Arial', sans-serif;
     }
+    /* Update the hero section to use a background image with 60% opacity */
     .hero-gradient {
-      background: linear-gradient(135deg, #0066cc, #00b0ff);
+      position: relative; /* Establish a positioning context */
+      color: white;
+      overflow: hidden;
+      /* Removed the blue gradient background */
+    }
+    .hero-gradient::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Replace the URL below with a direct link to your image */
+      background: url('https://media.istockphoto.com/id/1163757524/photo/software-development-team-working-on-computer-coding-and-programming.jpg?b=1&s=170667a&w=0&k=20&c=_yb32ky0J2Cuh2HSGBHTGVM9-HHkNUvH0VZbDcrT7ME=') no-repeat center center;
+      background-size: cover;
+      opacity: 0.6;  /* 60% opacity */
+      z-index: -1;   /* Ensure the background image stays behind the content */
     }
     .feature-icon {
       font-size: 3rem;
       color: #0066cc;
     }
-
-    
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -33,8 +48,6 @@
       </p>
     </div>
   </header>
-
-
 
   <nav class="bg-white shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-center space-x-8">

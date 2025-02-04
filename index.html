@@ -9,29 +9,23 @@
     body {
       font-family: 'Arial', sans-serif;
     }
-    /* Apply the background image directly to the header */
-    .hero-gradient {
+    /* Header with the provided Unsplash background image */
+    .hero-header {
       position: relative;
       color: white;
       overflow: hidden;
-      background: url('https://media.istockphoto.com/id/1830163120/photo/group-of-computer-programmers-talking-while-working-at-it-office.jpg?s=612x612&w=0&k=20&c=nnhMhZcifOMTSPiZJ72QUDVWxcSgCyth-2GQaDTgzx0=') no-repeat center center;
+      background: url('https://plus.unsplash.com/premium_photo-1682141013747-5aed8665c154?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D') no-repeat center center;
       background-size: cover;
-    }
-    .feature-icon {
-      font-size: 3rem;
-      color: #0066cc;
     }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <header class="hero-gradient text-white py-16">
+  <header class="hero-header text-white py-16">
     <div class="container mx-auto px-4 text-center">
       <!-- Company Logo -->
-      <img
-        src="https://img.freepik.com/premium-vector/creative-initial-letter-jg-logo-icon-design-template-elements_555601-343.jpg"
-        alt="J&G Software Solutions Logo"
-        class="mx-auto mb-4 w-32"
-      />
+      <img src="https://img.freepik.com/premium-vector/creative-initial-letter-jg-logo-icon-design-template-elements_555601-343.jpg" 
+           alt="J&G Software Solutions Logo" 
+           class="mx-auto mb-4 w-32">
       <h1 class="text-5xl font-bold mb-4">J&G Software Solutions</h1>
       <p class="text-xl max-w-2xl mx-auto">
         Empowering Businesses and Individuals with Cutting-Edge Technology Solutions
@@ -131,11 +125,7 @@
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Computer Peripherals -->
         <div class="bg-white p-6 rounded-lg shadow-md">
-          <img
-            src="https://redragonshop.com/cdn/shop/products/78KeysHot-SwappableCompactMechanicalKeyboard_2.png?v=1653373871&width=1946"
-            alt="Computer Peripherals"
-            class="w-full rounded-lg mb-4"
-          />
+          <img src="https://redragonshop.com/cdn/shop/products/78KeysHot-SwappableCompactMechanicalKeyboard_2.png?v=1653373871&width=1946" alt="Computer Peripherals" class="w-full rounded-lg mb-4">
           <h3 class="text-2xl font-bold mb-4">Computer Peripherals</h3>
           <p>
             High-quality keyboards, mice, headsets, and other essential computer accessories.
@@ -143,11 +133,7 @@
         </div>
         <!-- Mobile Accessories -->
         <div class="bg-white p-6 rounded-lg shadow-md">
-          <img
-            src="https://evolvedchargers.com/cdn/shop/products/3-in-1-samsung-wireless-charging-station-for-samsung-galaxy-watch-5-pro-samsung-galaxy-s22-ultra-samsung-buds-pro-2-android_6.png?v=1694456843&width=2500"
-            alt="Mobile Accessories"
-            class="w-full rounded-lg mb-4"
-          />
+          <img src="https://evolvedchargers.com/cdn/shop/products/3-in-1-samsung-wireless-charging-station-for-samsung-galaxy-watch-5-pro-samsung-galaxy-s22-ultra-samsung-buds-pro-2-android_6.png?v=1694456843&width=2500" alt="Mobile Accessories" class="w-full rounded-lg mb-4">
           <h3 class="text-2xl font-bold mb-4">Mobile Accessories</h3>
           <p>
             Cases, screen protectors, chargers, and innovative mobile device add-ons.
@@ -155,11 +141,7 @@
         </div>
         <!-- Networking Solutions -->
         <div class="bg-white p-6 rounded-lg shadow-md">
-          <img
-            src="https://image.made-in-china.com/202f0j00vDtqWruzZwcJ/19-Inch-6u-Data-Ceter-Cabinet-Network-Cabinet-Server-Cabinet-Rack-for-Optical-Fiber-Equipment-Telecommunications-Equipment-and-Switch-Equipment-CCTV-System-.webp"
-            alt="Networking Solutions"
-            class="w-full rounded-lg mb-4"
-          />
+          <img src="https://image.made-in-china.com/202f0j00vDtqWruzZwcJ/19-Inch-6u-Data-Ceter-Cabinet-Network-Cabinet-Server-Cabinet-Rack-for-Optical-Fiber-Equipment-Telecommunications-Equipment-and-Switch-Equipment-CCTV-System-.webp" alt="Networking Solutions" class="w-full rounded-lg mb-4">
           <h3 class="text-2xl font-bold mb-4">Networking Solutions</h3>
           <p>
             Routers, network switches, cables, and other networking equipment for home and business.
@@ -175,16 +157,18 @@
           <h3 class="text-2xl font-bold mb-6">Reach Out</h3>
           <p class="mb-4">
             <strong>Email:</strong>
-            <a href="mailto:jandgsoftwaresolutions@gmail.com" class="text-blue-600 hover:underline">jandgsoftwaresolutions@gmail.com</a>
+            <a href="mailto:jandgsoftwaresolutions@gmail.com" class="text-blue-600 hover:underline">
+              jandgsoftwaresolutions@gmail.com
+            </a>
           </p>
         </div>
         <div>
           <h3 class="text-2xl font-bold mb-6">Visit Our Store</h3>
           <p>
-            Palm Beach Outlets<br />
-            1721 Palm Beach Lakes Blvd.<br />
-            Suite E410<br />
-            West Palm Beach, FL 33401<br />
+            Palm Beach Outlets<br>
+            1721 Palm Beach Lakes Blvd.<br>
+            Suite E410<br>
+            West Palm Beach, FL 33401<br>
             United States
           </p>
         </div>
@@ -195,11 +179,11 @@
         <form class="max-w-lg mx-auto">
           <div class="mb-4">
             <label for="name" class="block mb-2">Name</label>
-            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required />
+            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required>
           </div>
           <div class="mb-4">
             <label for="email" class="block mb-2">Email</label>
-            <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required />
+            <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
           </div>
           <div class="mb-4">
             <label for="message" class="block mb-2">Message</label>

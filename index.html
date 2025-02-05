@@ -170,7 +170,7 @@
         We're excited to expand our team! If you are a motivated individual looking to make an impact in the technology industry, we want to hear from you.
       </p>
       <ul class="list-disc list-inside max-w-xl mx-auto text-lg mb-8">
-        <li>Currently enrolled in or holding a Master’s degree in Computer Science (or related field)</li>
+        <li>Currently enrolled in or holding a Master’s degree in Computer Science (or a related field)</li>
         <li>Strong communication and teamwork skills</li>
         <li>A passion for innovation and problem-solving</li>
         <li>Adaptability and a willingness to learn new technologies</li>
@@ -178,7 +178,7 @@
       <p class="text-center mb-8">
         Please submit your resume and cover letter along with a brief introduction about yourself.
       </p>
-      <form class="max-w-lg mx-auto" method="post" action="/submit-application" enctype="multipart/form-data">
+      <form class="max-w-lg mx-auto" action="#" method="post" enctype="multipart/form-data" id="careerForm">
         <div class="mb-4">
           <label for="applicantName" class="block mb-2">Name</label>
           <input type="text" id="applicantName" name="applicantName" class="w-full px-3 py-2 border rounded-lg" required>
@@ -247,7 +247,7 @@
       <!-- Contact Form -->
       <div class="mt-12">
         <h3 class="text-3xl font-bold text-center mb-8">Send Us a Message</h3>
-        <form class="max-w-lg mx-auto">
+        <form class="max-w-lg mx-auto" action="#" method="post" id="contactForm">
           <div class="mb-4">
             <label for="name" class="block mb-2">Name</label>
             <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required>
@@ -293,6 +293,18 @@
     // Invalidate map size after window loads to fix any rendering issues
     window.addEventListener('load', function() {
       map.invalidateSize();
+    });
+
+    // Prevent default submission for the career form for demo purposes
+    document.getElementById('careerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Your application has been submitted (demo).");
+    });
+
+    // Prevent default submission for the contact form for demo purposes
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Your message has been sent (demo).");
     });
   </script>
 </body>

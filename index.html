@@ -163,6 +163,50 @@
       </div>
     </section>
 
+    <!-- Hiring Section -->
+    <section id="careers" class="bg-white rounded-lg shadow-md p-12 mb-16">
+      <h2 class="text-4xl font-semibold text-center mb-8">We're Hiring</h2>
+      <p class="text-center mb-8">
+        We're excited to expand our team! If you are a motivated individual looking to make an impact in the technology industry, we want to hear from you.
+      </p>
+      <ul class="list-disc list-inside max-w-xl mx-auto text-lg mb-8">
+        <li>Currently enrolled in or holding a Master’s degree in Computer Science (or related field)</li>
+        <li>Strong communication and teamwork skills</li>
+        <li>A passion for innovation and problem-solving</li>
+        <li>Adaptability and a willingness to learn new technologies</li>
+      </ul>
+      <p class="text-center mb-8">
+        Please submit your resume and cover letter along with a brief introduction about yourself.
+      </p>
+      <form class="max-w-lg mx-auto" method="post" action="/submit-application" enctype="multipart/form-data">
+        <div class="mb-4">
+          <label for="applicantName" class="block mb-2">Name</label>
+          <input type="text" id="applicantName" name="applicantName" class="w-full px-3 py-2 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="applicantEmail" class="block mb-2">Email</label>
+          <input type="email" id="applicantEmail" name="applicantEmail" class="w-full px-3 py-2 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="resume" class="block mb-2">Resume</label>
+          <input type="file" id="resume" name="resume" class="w-full px-3 py-2 border rounded-lg" accept=".pdf,.doc,.docx" required>
+        </div>
+        <div class="mb-4">
+          <label for="coverLetter" class="block mb-2">Cover Letter</label>
+          <input type="file" id="coverLetter" name="coverLetter" class="w-full px-3 py-2 border rounded-lg" accept=".pdf,.doc,.docx" required>
+        </div>
+        <div class="mb-4">
+          <label for="applicantMessage" class="block mb-2">Additional Information (optional)</label>
+          <textarea id="applicantMessage" name="applicantMessage" rows="4" class="w-full px-3 py-2 border rounded-lg"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+            Submit Application
+          </button>
+        </div>
+      </form>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="bg-white rounded-lg shadow-md p-12">
       <h2 class="text-4xl font-semibold text-center mb-12">Contact Us</h2>

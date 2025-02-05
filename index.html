@@ -295,16 +295,18 @@
       map.invalidateSize();
     });
 
-    // Prevent default submission for the career form for demo purposes
+    // Prevent default submission for the career form, alert, then reload the page
     document.getElementById('careerForm').addEventListener('submit', function(e) {
       e.preventDefault();
       alert("Your application has been submitted (demo).");
+      location.reload();
     });
 
-    // Prevent default submission for the contact form for demo purposes
+    // Prevent default submission for the contact form, alert, then reload the page
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert("Your message has been sent (demo).");
+      alert("Your Application has been received.Press okay to continue");
+      location.reload();
     });
   </script>
 </body>

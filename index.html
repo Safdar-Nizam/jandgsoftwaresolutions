@@ -295,17 +295,17 @@
       map.invalidateSize();
     });
 
-    // Prevent default submission for the career form, alert, then reload the page
+    // Prevent default submission for the career form, show alert, then reload the page
     document.getElementById('careerForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert("Your application has been submitted (demo).");
+      alert("J&G says: Your application has been submitted (demo).");
       location.reload();
     });
 
-    // Prevent default submission for the contact form, alert, then reload the page
+    // Prevent default submission for the contact form, show alert, then reload the page
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert("Your Application has been received.Press okay to continue");
+      alert("J&G says: Your message has been sent (demo).");
       location.reload();
     });
   </script>
